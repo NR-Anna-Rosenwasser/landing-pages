@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "tailwind-animations";
+@import "./landers/auftrittskompetenz.css";
+
+@theme {
+  --color-rose: #fe7e73;
+  --color-light: #fff0f0;
+  --font-display: "Poppins", "sans-serif";
+  --font-body: "Poppins", "sans-serif";
+  --font-poppins: "Poppins", "sans-serif";
+}

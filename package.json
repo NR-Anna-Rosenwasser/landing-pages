@@ -1,0 +1,24 @@
+{
+  "name": "landers",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/fonts": "^0.14.0",
+    "@nuxt/icon": "^2.2.3",
+    "@tailwindcss/vite": "^4.3.1",
+    "nuxt": "^4.4.8",
+    "nuxt-umami": "^3.2.1",
+    "stripe": "^22.3.0",
+    "tailwind-animations": "^1.0.1",
+    "tailwindcss": "^4.3.1",
+    "vue": "^3.5.38",
+    "vue-router": "^5.1.0"
+  }
+}
