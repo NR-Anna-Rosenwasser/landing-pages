@@ -15,9 +15,9 @@ export default defineEventHandler(async (event) => {
 
   // 2. Fetch the real data securely from Tally
   const response = await fetch(
-    `https://api.tally.so/forms/${config.tallyFormId}/submissions/${tallyId}`,
+    `https://api.tally.so/forms/${config.public.tallyFormId}/submissions/${tallyId}`,
     {
-      headers: { Authorization: `Bearer ${config.tallyApiKey}` },
+      headers: { Authorization: `Bearer ${config.public.tallyApiKey}` },
     },
   );
   const tallyData = await response.json();
@@ -41,7 +41,7 @@ export default defineEventHandler(async (event) => {
   const shippingCost = qty === 1 ? 200 : qty * 300; // In Rappen
 
   // 4. Initialize Stripe
-  const stripe = new Stripe(config.stripeSecretKey);
+  const stripe = new Stripe(config.public.stripeSecretKey);
 
   // 5. Generate the Checkout Session
   const session = await stripe.checkout.sessions.create({
