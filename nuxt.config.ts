@@ -55,10 +55,10 @@ export default defineNuxtConfig({
     logErrors: true,
   },
   runtimeConfig: {
-    tallyApiKey: "",
-    tallyFormId: "",
-    stripeSecretKey: "",
     public: {
+      tallyApiKey: "",
+      tallyFormId: "",
+      stripeSecretKey: "",
       appUrl: "",
     },
   },
