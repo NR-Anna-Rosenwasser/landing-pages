@@ -90,10 +90,8 @@ useSeoMeta({
               Input am 17. Juli
               <Icon name="heroicons:chevron-right-16-solid" size="1.25em" />
             </a>
-            <a
-              class="input-button"
-              href="https://tix.rose-water.ch/event/4/feministische-auftrittskompetenz-27072026"
-              >Input am 27. Juli
+            <a class="input-button opacity-50 pointer-events-none" href="#"
+              >Input am 27. Juli (Ausverkauft)
               <Icon name="heroicons:chevron-right-16-solid" size="1.25em" />
             </a>
           </div>
