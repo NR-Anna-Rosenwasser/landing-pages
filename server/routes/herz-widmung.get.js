@@ -38,7 +38,7 @@ export default defineEventHandler(async (event) => {
       statusMessage: "Missing quantity",
     });
   }
-  const shippingCost = qty === 1 ? 200 : qty * 300; // In Rappen
+  const shippingCost = qty === 1 ? 200 : qty * 400; // In Rappen
 
   // 4. Initialize Stripe
   const stripe = new Stripe(config.public.stripeSecretKey);
